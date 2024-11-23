@@ -1,0 +1,159 @@
+/* Layout Structure */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fff;
+    border-right: 1px solid #eee;
+    z-index: 1000;
+}
+
+.main-header {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 250px;
+    right: 0;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    z-index: 999;
+    padding: 0 20px;
+}
+
+.main-content {
+    margin-left: 250px;
+    margin-top: 60px;
+    padding: 20px;
+    padding-bottom: 80px; /* Ensures content doesn't get hidden behind footer */
+    min-height: calc(100vh - 120px); /* Accounts for header and footer */
+}
+
+.footer {
+    background: #fff;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 250px;
+    right: 0;
+    border-top: 1px solid #eee;
+    z-index: 1000;
+    min-height: 60px;
+}
+
+/* Sidebar Styling */
+.sidebar-header {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        left: 0;
+    }
+}
+.sidebar-header .logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.nav-item {
+    margin: 5px 0;
+}
+
+.nav-link {
+    padding: 12px 20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-link:hover {
+    background: #38b6ff15;
+    color: #38b6ff;
+}
+
+.nav-link.active {
+    background: #38b6ff;
+    color: #fff;
+}
+
+/* Header Elements */
+.avatar {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-250px);
+        transition: transform 0.3s ease;
+    }
+    
+    .sidebar.active {
+        transform: translateX(0);
+    }
+    
+    .main-header,
+    .main-content {
+        left: 0;
+        margin-left: 0;
+    }
+}
+
+.footer {
+    background: #fff;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 250px;
+    right: 0;
+    min-height: 40px;
+    border-top: 1px solid #eee;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        left: 0;
+    }
+}
+
+.notification-dropdown {
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.notification-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.notification-item {
+    transition: background-color 0.3s;
+}
+
+.notification-item:hover {
+    background-color: #f8f9fa;
+}
+
+.notification-item.unread {
+    background-color: #f0f9ff;
+}
+
+.bg-info { background-color: #0dcaf0; }
+.bg-warning { background-color: #ffc107; }
+.bg-danger { background-color: #dc3545; }
+.bg-success { background-color: #198754; }

@@ -1,0 +1,62 @@
+[
+    {
+        "setting_key": "company_logo",
+        "setting_value": "assets\/images\/uploads\/company_logo_1731689240.png",
+        "updated_at": "2024-11-15 19:47:20",
+        "company_logo": null
+    },
+    {
+        "setting_key": "company_name",
+        "setting_value": "The Olivian Group Limited",
+        "updated_at": "2024-11-15 19:49:52",
+        "company_logo": null
+    },
+    {
+        "setting_key": "contact_email",
+        "setting_value": "info@olivian.co.ke",
+        "updated_at": "2024-11-15 19:38:06",
+        "company_logo": null
+    },
+    {
+        "setting_key": "currency",
+        "setting_value": "KES",
+        "updated_at": "2024-11-15 19:37:39",
+        "company_logo": null
+    },
+    {
+        "setting_key": "email_notifications",
+        "setting_value": "on",
+        "updated_at": "2024-11-15 19:38:07",
+        "company_logo": null
+    },
+    {
+        "setting_key": "last_backup",
+        "setting_value": null,
+        "updated_at": "2024-11-15 19:37:40",
+        "company_logo": null
+    },
+    {
+        "setting_key": "low_stock_threshold",
+        "setting_value": "10",
+        "updated_at": "2024-11-15 19:37:39",
+        "company_logo": null
+    },
+    {
+        "setting_key": "stock_alerts",
+        "setting_value": "on",
+        "updated_at": "2024-11-15 19:38:07",
+        "company_logo": null
+    },
+    {
+        "setting_key": "vat_number",
+        "setting_value": "P052291267A",
+        "updated_at": "2024-11-15 19:38:07",
+        "company_logo": null
+    },
+    {
+        "setting_key": "vat_rate",
+        "setting_value": "16.00",
+        "updated_at": "2024-11-15 19:37:39",
+        "company_logo": null
+    }
+]
